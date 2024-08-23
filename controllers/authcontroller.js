@@ -8,6 +8,7 @@ export const registerController = async (req, res) => {
         res
           .status(400)
           // this is new folder and file so check it
+          // Next File
           .send({ success: false, message: "Please Provide Name" })
       );
     }
