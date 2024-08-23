@@ -4,9 +4,12 @@ export const registerController = async (req, res) => {
   try {
     const { name, email, password } = req.body;
     if (!name) {
-      return res
-        .status(400)
-        .send({ success: false, message: "Please Provide Name" });
+      return (
+        res
+          .status(400)
+          // this is new folder and file so check it
+          .send({ success: false, message: "Please Provide Name" })
+      );
     }
     if (!email) {
       return res
