@@ -1,3 +1,5 @@
+/* Now this is good project with github repository*/
+// this is new way of code so install this
 import userModel from "../models/userModel.js";
 
 export const registerController = async (req, res) => {
